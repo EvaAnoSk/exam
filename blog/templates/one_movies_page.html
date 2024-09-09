@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Фильм {{film.name}}</h2>
+        <p>{{film.description}}</p>
+        <p>{{film.date}}</p>
+        <p>{{film.director}}</p>
+            Актеры:
+            {% for data in actors %}
+                    <p>{{data.name}}</p>
+                <br>
+            {% endfor %}
+            Режиссеры:
+            {% for data in directors %}
+                    <p>{{data.name}}</p>
+                <br>
+            {% endfor %}
+</body>
+</html>
